@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-auth.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                   <!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
     <title>MrIvan</title>
 </head>
 <body>
@@ -48,6 +50,17 @@
             <button class="get_auth">Регистрация</button><br><br>
             <input type="text" class="comment">
             <div class="comments1"></div>
+
+
+<script type="text/javascript">
+  VK.init({apiId: API_ID, onlyWidgets: true});
+</script>
+
+<!-- Put this div tag to the place, where the Like block will be -->
+<div id="vk_like"></div>
+<script type="text/javascript">
+VK.Widgets.Like("vk_like", {type: "button"});
+</script> 
         </div>
         </div>
       
